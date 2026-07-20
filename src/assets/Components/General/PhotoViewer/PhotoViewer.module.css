@@ -1,0 +1,16 @@
+.photoViewerWindow {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    background-color: red;
+}
+
+.photoViewerPlaceholder {
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;  
+    background-color: #411d1d;
+}

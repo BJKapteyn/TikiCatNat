@@ -1,12 +1,14 @@
 import { Route, Routes } from 'react-router';
-import { PhotoViewer } from './assets/Components/General/PhotoViewer/PhotoViewer';
+import Layout from './assets/Components/Layout/Layout';
+import HomePage from './assets/Pages/HomePage';
 import './App.css';
 
 function App() {
 
     return (
         <Routes>
-            <Route path="/" element={<PhotoViewer />} >
+            <Route path="/" element={<Layout />} >
+                <Route index element={<HomePage />} />
             </Route>
         </Routes>
     );

@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-intersection-observer": "^11.0.0",
     "react-router": "^8.2.0",
     "react-spring": "^10.0.3"
   },

@@ -9,6 +9,15 @@
   --accent-orange: #FBB03B;  
 }
 
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 /* .counter {
   font-size: 16px;
   padding: 5px 10px;

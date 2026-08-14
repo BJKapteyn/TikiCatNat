@@ -1,10 +1,5 @@
 .navbar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-    height: 20em;
+    height: auto;   
 }
 
 .navbar-logo {
@@ -14,4 +9,13 @@
 .navbar-links {
     display: flex;
     gap: 2em;
+}
+
+.navbar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 20em;
 }

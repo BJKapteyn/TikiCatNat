@@ -7,7 +7,7 @@ import "./Navbar.css";
 import { NavBarMini } from "./NavBarMini/NavBarMini";
 
 const Navbar = () => {
-    const [isInView, setIsInView] = useState(true);
+    const [isInView, setIsInView] = useState<boolean>(true);
     const { ref, inView } = useInView({
         threshold: 0.01,
         initialInView: true,
@@ -15,10 +15,8 @@ const Navbar = () => {
 
     if(!inView && isInView) {
         setIsInView(false);
-        console.log("state changed to false");
     } else if(inView && !isInView) {
         setIsInView(true);
-        console.log("state changed to true");
     }
     
 

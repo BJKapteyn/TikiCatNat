@@ -10,7 +10,6 @@ interface NavBarMiniProps {
 }
 
 export const NavBarMini: React.FC<NavBarMiniProps> = ({ isInView }) => {
-    console.log(isInView);
     const springProps = useSpring({
         from: { opacity: isInView ? 1 : 0, transform: isInView ? "translateY(0)" : "translateY(-20px)" },
         to: { opacity: isInView ? 0 : 1, transform: isInView ? "translateY(-20px)" : "translateY(0)" },

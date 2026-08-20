@@ -51,6 +51,10 @@
   color: #222;
 }
 
+.info-animation-container {
+    height: 10em;   
+}
+
 /* Responsive: stack columns on small screens */
 @media (max-width: 480px) {
   .info-row {

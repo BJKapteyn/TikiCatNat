@@ -1,6 +1,6 @@
 ﻿import { animated, useSpring } from 'react-spring';
 import './HomePageInfo.css';
-import { useInView, type InViewHookResponse } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
 export const HomePageInfo: React.FC = () => {

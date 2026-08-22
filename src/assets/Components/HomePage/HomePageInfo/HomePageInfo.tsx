@@ -1,7 +1,7 @@
 ﻿import { animated, useSpring } from 'react-spring';
-import './HomePageInfo.css';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import './HomePageInfo.css';
 
 export const HomePageInfo: React.FC = () => {
     const observerThreshold = 0.8;

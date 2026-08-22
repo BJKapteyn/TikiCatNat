@@ -1,19 +1,22 @@
 ﻿import { animated, useSpring } from 'react-spring';
+import { easings } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import './HomePageInfo.css';
 
 export const HomePageInfo: React.FC = () => {
     const observerThreshold = 0.8;
+    const translateDistance = 10;
+    const animationDuration = 500;
 
     const { ref: slideRightIntersectionRef, inView: slideRightInView } = useInView({
         threshold: observerThreshold,
         triggerOnce: true,
     });
     const [slideRight, slideRightApi] = useSpring(() => ({
-        from: { transform: 'translateX(-40%)', opacity: 0 },
-        to: { transform: 'translateX(0)', opacity: 1 },
-        config: { duration: 500 },
+        from: { transform: `translateX(-${translateDistance}%)`, opacity: 0 },
+        to: { transform: `translateX(0)`, opacity: 1 },
+        config: { duration: animationDuration, easing: easings.easeOutSine },
         pause: true
     })); 
 
@@ -22,9 +25,9 @@ export const HomePageInfo: React.FC = () => {
         triggerOnce: true,
     });
     const [slideLeft, slideLeftApi] = useSpring(() => ({
-        from: { transform: 'translateX(40%)', opacity: 0 },
+        from: { transform: `translateX(${translateDistance}%)`, opacity: 0 },
         to: { transform: 'translateX(0)', opacity: 1 },
-        config: { duration: 500 },
+        config: { duration: animationDuration, easing: easings.easeOutSine },
         pause: true
     }));
 
@@ -33,9 +36,9 @@ export const HomePageInfo: React.FC = () => {
         triggerOnce: true,
     });
     const [slideUp, slideUpApi] = useSpring(() => ({
-        from: { transform: 'translateY(-40%)', opacity: 0 },
+        from: { transform: `translateY(${translateDistance}%)`, opacity: 0 },
         to: { transform: 'translateY(0)', opacity: 1 },
-        config: { duration: 500 },
+        config: { duration: animationDuration, easing: easings.easeOutSine },
         pause: true
     }));
 

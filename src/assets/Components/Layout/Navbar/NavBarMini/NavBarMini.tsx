@@ -5,7 +5,6 @@ import logo from "../../../../Images/Logos/LOGOTYPE-transparent.png";
 import "./NavBarMini.css";
 
 interface NavBarMiniProps {
-    // Add any props you want to pass to the NavBarMini component here
     isInView: boolean;
 }
 

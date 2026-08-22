@@ -1,7 +1,7 @@
-﻿import { animated, useSpring } from 'react-spring';
+﻿import { useEffect } from 'react';
+import { animated, useSpring } from 'react-spring';
 import { easings } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
 import './HomePageInfo.css';
 
 export const HomePageInfo: React.FC = () => {

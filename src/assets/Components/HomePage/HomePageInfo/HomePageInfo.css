@@ -10,7 +10,6 @@
 .info-grid {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     width: 100%;
     max-width: 760px;
 }
@@ -22,9 +21,8 @@
 }
 
 .info-colorBox {
-    width: 140px;
     height: 100%;
-    flex: 0 0 140px;
+    flex: 0 0 40%;
 }
 
 .info-colorBox--one {
@@ -41,7 +39,7 @@
 
 .info-textBox {
     height: 100%;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     background: #f7f7f7;
     display: flex;
     align-items: center;

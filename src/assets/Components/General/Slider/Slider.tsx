@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 import { nextSlide } from './SliderUtility';
-import {ReactComponent as ChevLeft} from '../../Images/VectorImages/CheveronLeft.svg';
-import ChevRight from '../../Images/VectorImages/CheveronRight.svg';
+import ChevLeft from '../../../Images/VectorImages/CheveronLeft.svg';
+import ChevRight from '../../../Images/VectorImages/CheveronRight.svg';
 import './Slider.css';
 
 interface SliderProps {

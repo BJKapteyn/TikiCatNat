@@ -59,7 +59,7 @@ export const PhotoViewer: React.FC<PhotoViewerProps> = () => {
                 <button onClick={() => openPhotoViewer()}>Open Photo Viewer</button>
                 <button onClick={() => closePhotoViewer()}>Close Photo Viewer</button>
             </div>
-            {selectedImageIndex && (
+            {selectedImageIndex !== null && (
                 <CardModal callBackDeselect={() => setSelectedImageIndex(null)}>
                     <Slider slides={gridImageData.map((imageData, index) => (
                         <img key={index} src={imageData.imageSrc} alt={imageData.altText ?? 'Image'}></img>

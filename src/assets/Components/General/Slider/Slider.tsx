@@ -35,9 +35,9 @@ export const Slider: React.FC<SliderProps> = ({ slides }) => {
 
     return (
         <div className="slider-container">
-            <button onClick={() => slideActuate(-1)} className="slider-actuate-button slider-left" ><ChevLeft /></button>
+            <button onClick={() => slideActuate(-1)} className="slider-actuate-button slider-left" ><img src={ChevLeft} alt="Previous Slide" /></button>
             {currentSlide}
-            <button onClick={() => slideActuate(1)} className="slider-actuate-button slider-right" ><ChevRight /></button>
+            <button onClick={() => slideActuate(1)} className="slider-actuate-button slider-right" ><img src={ChevRight} alt="Next Slide" /></button>
         </div>
     );
 };

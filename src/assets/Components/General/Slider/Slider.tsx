@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { animated, useSpring } from 'react-spring';
 import { nextSlide } from './SliderUtility';
-import './Slider.css';
-import ChevLeft from '../../Images/VectorImages/CheveronLeft.svg';
+import {ReactComponent as ChevLeft} from '../../Images/VectorImages/CheveronLeft.svg';
 import ChevRight from '../../Images/VectorImages/CheveronRight.svg';
+import './Slider.css';
 
 interface SliderProps {
     slides: React.ReactNode[];
-    timeBeforeAutoSlideInSeconds: number;
+    // timeBeforeAutoSlideInSeconds?: number;
 }
 
-const Slider: React.FC<SliderProps> = ({ slides, timeBeforeAutoSlideInSeconds = 0 }) => {
+export const Slider: React.FC<SliderProps> = ({ slides }) => {
     const elementAnimation = { 
         from: { opacity: 0 }, 
         to: { opacity: 1 }, 
@@ -41,5 +41,3 @@ const Slider: React.FC<SliderProps> = ({ slides, timeBeforeAutoSlideInSeconds = 
         </div>
     );
 };
-
-export default Slider;

@@ -1,5 +1,5 @@
 export interface ImageData {
-    id: string;
+    id: number;
     imageSrc: string;
     description: string | null;
     altText: string | null;

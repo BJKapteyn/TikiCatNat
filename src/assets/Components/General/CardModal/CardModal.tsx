@@ -4,7 +4,13 @@ import './CardModal.css';
 //      callBackDeselect: function to remove the modal
 //      children: jsx to display
 //      containerStyleId: custom display styling 
-export const CardModal = ({ callBackDeselect, children, containerStyleId}) => {
+interface CardModalProps {
+    callBackDeselect: () => void;
+    children: React.ReactNode;
+    containerStyleId?: string;
+}
+
+export const CardModal: React.FC<CardModalProps> = ({ callBackDeselect, children, containerStyleId}) => {
 
     return (
         <div className="cardmodal">

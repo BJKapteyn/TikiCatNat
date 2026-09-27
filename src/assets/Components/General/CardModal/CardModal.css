@@ -11,6 +11,7 @@
 }
 
 .cardmodal-container {  
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -18,7 +19,7 @@
     z-index: 101;
     height: auto;
     width: 75vw;
-    background-color: white;
+    background-color: rgba(0,0,0,.4);
     overflow-y: hidden;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -26,9 +27,9 @@
     -o-transform: translate(-50%, -50%);
 }
 
-.cardmodal-card {
+/* .cardmodal-card {
     background-color: white;
-}
+} */
 
 .cardmodal-exit{
     top: 2em;

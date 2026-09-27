@@ -8,7 +8,7 @@ const contextSources = Object.values(modules).map(m => m.default);
 const uniqueSrcs = Array.from([...contextSources]);
 
 export const photoViewerImages: ImageData[] = uniqueSrcs.map((src, i) => ({
-    id: i + 1,
+    id: i++,
     imageSrc: src,
     description: null,
     altText: null,

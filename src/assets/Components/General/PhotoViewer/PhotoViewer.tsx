@@ -61,7 +61,7 @@ export const PhotoViewer: React.FC<PhotoViewerProps> = () => {
             </div>
             {selectedImageIndex !== null && (
                 <CardModal callBackDeselect={() => setSelectedImageIndex(null)}>
-                    <Slider slides={gridImageData.map((imageData, index) => (
+                    <Slider startSlideIndex={selectedImageIndex} slides={gridImageData.map((imageData, index) => (
                         <img key={index} src={imageData.imageSrc} alt={imageData.altText ?? 'Image'}></img>
                     ))} />
                 </CardModal>

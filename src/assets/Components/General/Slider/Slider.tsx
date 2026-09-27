@@ -7,10 +7,11 @@ import './Slider.css';
 
 interface SliderProps {
     slides: React.ReactNode[];
+    startSlideIndex?: number;
     // timeBeforeAutoSlideInSeconds?: number;
 }
 
-export const Slider: React.FC<SliderProps> = ({ slides }) => {
+export const Slider: React.FC<SliderProps> = ({ slides, startSlideIndex }) => {
     const elementAnimation = { 
         from: { opacity: 0 }, 
         to: { opacity: 1 }, 
@@ -18,7 +19,7 @@ export const Slider: React.FC<SliderProps> = ({ slides }) => {
         reset: true
     };
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(startSlideIndex ?? 0);
     const [slideAnimation, api] = useSpring(() => (elementAnimation));
     const slideArrayLength = slides.length;
 

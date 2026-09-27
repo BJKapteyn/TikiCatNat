@@ -1,5 +1,54 @@
 .homepage-about {
     background: #3F5EFB;
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    height: 80vh;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-about__cards {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 40em;
+}
+
+.homepage-about__card {
+    flex: 1 1 0;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.92);
+    color: #222;
+    box-shadow: 0 1rem 2.5rem rgba(28, 24, 58, 0.18);
+}
+
+.homepage-about__card h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.homepage-about__card p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+    .homepage-about__cards {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .homepage-about__card {
+        padding: 1.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .homepage-about__card {
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }

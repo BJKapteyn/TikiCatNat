@@ -11,6 +11,24 @@
     gap: 2em;
 }
 
+.navbar-link {
+    border-radius: 60px 0px 60px 0px;
+    color: white;
+    background-color: var(--primary-blue);
+    padding: 2em;
+    text-align: center;
+    min-width: 6em;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+.navbar-link:hover {
+    background-color: var(--secondary-blue-dark);
+}
+
+.navbar-link div {
+    color: white;
+}
+
 .navbar-top {
     display: flex;
     flex-direction: row;

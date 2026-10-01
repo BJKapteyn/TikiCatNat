@@ -10,10 +10,21 @@
 }
 
 a {
-    color: var(--primary-blue);
     text-decoration: none;
 }
 
 li {
     list-style: none;
+}
+
+button {
+    background-color: var(--secondary-purple-dark);
+    transition: background-color .3s ease-in-out;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: var(--primary-purple);
 }

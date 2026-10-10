@@ -1,7 +1,10 @@
+import { GuidedGallery } from "../Components/GalleryPage/GuidedGallery/GuidedGallery";
 
 export default function GalleryPage() {
 
     return (
-        <div className="gallery-page">Gallery</div>
+        <main className="gallery-page">
+            <GuidedGallery />
+        </main>
     )
 }

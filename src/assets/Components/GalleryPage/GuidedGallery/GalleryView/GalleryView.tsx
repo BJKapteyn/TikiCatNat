@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { animated, useSpring } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import type { GalleryProps } from "../../../../TypeScriptInterfaces/PageInterfaces";
+import './GalleryView.css';
 
 interface GalleryViewProps {
     galleryData: GalleryProps;
@@ -27,11 +28,13 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ galleryData }) => {
     }, [isInView, fadeInApi]);
 
     return (
-        <animated.div ref={ref} style={fadeIn}>
-            <div key={galleryData.id}>
-                <img src={galleryData.imageSrc} alt={galleryData.title} />
-                <h3>{galleryData.title}</h3>
-                <p>{galleryData.description}</p>
+        <animated.div key={galleryData.id} ref={ref} style={fadeIn} className="galleryview-container">
+            <div className="galleryview-content">
+                <img className="galleryview-image" src={galleryData.imageSrc} alt={galleryData.title} />
+                <div className="galleryview-details">
+                    <h3 className="galleryview-title">{galleryData.title}</h3>
+                    <p className="galleryview-description">{galleryData.description}</p>
+                </div>
             </div>
         </animated.div>
     );

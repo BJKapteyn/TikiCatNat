@@ -4,6 +4,7 @@ import { easings } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
 import './HomePageInfo.css';
 
+// Section containing brief
 export const HomePageInfo: React.FC = () => {
     const observerThreshold = 0.8;
     const translateDistance = 10;

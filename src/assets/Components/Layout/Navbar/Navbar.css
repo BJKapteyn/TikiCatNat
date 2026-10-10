@@ -14,15 +14,16 @@
 .navbar-link {
     border-radius: 60px 0px 60px 0px;
     color: white;
-    background-color: var(--primary-blue);
-    padding: 2em;
+    background-color: var(--secondary-blue-dark);
+    padding: 1em;
     text-align: center;
     min-width: 6em;
     transition: background-color .3s ease-in-out;
     cursor: pointer;
+    font-size: 1.5em;
 }
 .navbar-link:hover {
-    background-color: var(--secondary-blue-dark);
+    background-color: var(--primary-blue);
 }
 
 .navbar-link div {

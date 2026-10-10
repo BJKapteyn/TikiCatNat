@@ -7,10 +7,7 @@ import { Slider } from '../Slider/Slider';
 import type { ImageData } from '../../../TypeScriptInterfaces/DataInterfaces';
 import styles from './PhotoViewer.module.css';
 
-interface PhotoViewerProps {
-}
-
-export const PhotoViewer: React.FC<PhotoViewerProps> = () => {
+export const PhotoViewer: React.FC = () => {
     const [photoViewerIsOpen, setPhotoViewerIsOpen] = useState(false); 
     const [gridImageData, setGridImageData] = useState<ImageData[]>([]);
     const [imageDataLength, setImageDataLength] = useState(photoViewerImages.length);

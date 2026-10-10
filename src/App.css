@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Gelato';
+  src: url('./assets/Fonts/Gelato.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'Sign Painter';
+  src: url('./assets/Fonts/SignPainter.ttf') format('truetype')
+}
+
 :root {
   --primary-blue: #1fefe2;
   --secondary-blue-dark: #46a59d;
@@ -9,7 +19,13 @@
   --accent-orange: #FBB03B;  
 }
 
+h1,
+h2 {
+    font-family: 'Gelato', sans-serif;
+}
+
 a {
+    font-family: "Sign Painter", sans-serif;
     text-decoration: none;
 }
 

@@ -20,6 +20,15 @@
     gap: 2em;
 }
 
+.navbar-mini-link a div {
+    color: var(--secondary-blue-dark);
+    transition: color .3s ease-in-out;
+    font-size: 1.53em;
+}
+.navbar-mini-link a div:hover {
+    color: var(--primary-blue);
+}   
+
 .navbar-mini-logo {
     height: 100%;
 }

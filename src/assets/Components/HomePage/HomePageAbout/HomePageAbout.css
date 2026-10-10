@@ -21,7 +21,8 @@
     padding: 2.5rem;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.92);
-    color: #222;
+    color: white;
+    background: #333;
     box-shadow: 0 1rem 2.5rem rgba(28, 24, 58, 0.18);
 }
 

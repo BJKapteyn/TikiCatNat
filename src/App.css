@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Sign Painter';
-  src: url('./assets/Fonts/SignPainter.ttf') format('truetype')
+  src: url('./assets/Fonts/SignPainterHouseScript.ttf') format('truetype')
 }
 
 :root {
@@ -24,8 +24,12 @@ h2 {
     font-family: 'Gelato', sans-serif;
 }
 
-a {
+a,
+button {
     font-family: "Sign Painter", sans-serif;
+}
+
+a {
     text-decoration: none;
 }
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import FaceBook from '../../../Images/Socials/social-facebook.svg?react';
 import Instagram from '../../../Images/Socials/social-instagram.svg?react';
-import Tiktok from '../../../Images/Socials/social-tiktok.svg?react';
+import Twitter from '../../../Images/Socials/social-twitter.svg?react';
 import { socialLinks } from './socialLinks';
 import './Socials.css';
 
@@ -22,7 +22,7 @@ export const Socials: React.FC<SocialsProps> = ({ styleId = null }) => {
             </div>
             <div className="socials-flexitem">
                 <Link to={socialLinks.tiktok}>
-                    <Tiktok id={styleid} className="socials-image"></Tiktok>
+                    <Twitter id={styleid} className="socials-image"></Twitter>
                 </Link>
             </div>
             <div className="socials-flexitem">

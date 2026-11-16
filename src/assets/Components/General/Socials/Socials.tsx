@@ -1,13 +1,16 @@
-import { Link } from 'react-router-dom';
-import { ReactComponent as FaceBook } from '../../../Images/Socials/social-facebook.svg';
-import { ReactComponent as Instagram } from '../../../Images/Socials/social-instagram.svg';
-import { ReactComponent as Tiktok } from '../../../Images/Socials/social-tiktok.svg';
-import { socialLinks } from './Data/Socials/socialLinks';
-import '../../../App.scss';
+import { Link } from 'react-router';
+import FaceBook from '../../../Images/Socials/social-facebook.svg?react';
+import Instagram from '../../../Images/Socials/social-instagram.svg?react';
+import Tiktok from '../../../Images/Socials/social-tiktok.svg?react';
+import { socialLinks } from './socialLinks';
 import './Socials.css';
 
+interface SocialsProps {
+    styleId?: string | null;
+}
 // Links to social media pages
-export const Socials = ({ styleId = null }) => {
+
+export const Socials: React.FC<SocialsProps> = ({ styleId = null }) => {
     const styleid = styleId ?? '';
 
     return(

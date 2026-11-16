@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import { NavBarLinks } from "./NavBarLinks";
 import { useInView } from "react-intersection-observer";
+import { NavBarMini } from "./NavBarMini/NavBarMini";
+import { Socials } from "../../General/Socials/Socials";
 import logo from "../../../Images/Logos/LOGO-V1-transparent.png";
 import "./Navbar.css";
-import { NavBarMini } from "./NavBarMini/NavBarMini";
 
 const Navbar = () => {
     const { ref, inView } = useInView({
@@ -25,6 +26,7 @@ const Navbar = () => {
                 ))}
                 </ul>
             </div>
+            <Socials />
             <NavBarMini isInView={inView} />
         </nav>
     );

@@ -42,10 +42,6 @@
 }
 
 @media (max-width: 640px) {
-    .home-page-title-card__text {
-
-    }
-
     .home-page-title-card__text--top-left {
         top: 6rem;
         left: 1.25rem;

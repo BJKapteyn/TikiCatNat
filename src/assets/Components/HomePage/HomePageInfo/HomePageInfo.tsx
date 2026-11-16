@@ -58,7 +58,7 @@ export const HomePageInfo: React.FC = () => {
 
     return (
         <div className="info-homePageInfo">
-            <div onClick={() => {slideLeftApi.resume(); console.log("clicked")}} className="info-grid">
+            <div onClick={() => slideLeftApi.resume()} className="info-grid">
                 <div className="info-animation-container" ref={slideRightIntersectionRef}>
                     <animated.div style={slideRight} className="info-row">
                         <div className="info-colorBox info-colorBox--one" />

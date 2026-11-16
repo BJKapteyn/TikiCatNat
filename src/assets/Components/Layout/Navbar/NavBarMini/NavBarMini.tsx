@@ -20,7 +20,6 @@ export const NavBarMini: React.FC<NavBarMiniProps> = ({ isInView }) => {
     
     useEffect(() => {
         setNavBarIsInView(isInView);
-        console.log("nav bar mini use effect");
     }, [isInView]); 
 
     return (

@@ -3,6 +3,9 @@
     flex-direction: row;
     justify-content: center;
     gap: 1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 
 .socials-flexitem {
@@ -17,7 +20,7 @@
 .socials-image {
     width: 1.5em;
     fill: #fde5b7;
-    fill: var(--secondary-orange);
+    fill: var(--primary-purple);
     transition: fill 500ms;
     -webkit-transition: fill 500ms;
     -moz-transition: fill 500ms;
@@ -26,5 +29,5 @@
 }
 
 .socials-image:hover {
-    fill: var(--main-accent-color);
+    fill: var(--secondary-purple);
 }

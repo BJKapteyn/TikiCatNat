@@ -14,7 +14,7 @@
 .navbar-link {
     border-radius: 60px 0px 60px 0px;
     color: white;
-    background-color: var(--secondary-blue-dark);
+    background-color: var(--primary-blue);
     padding: 1em;
     text-align: center;
     min-width: 6em;
@@ -23,7 +23,7 @@
     font-size: 1.5em;
 }
 .navbar-link:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--secondary-blue-dark);
 }
 
 .navbar-link div {
@@ -37,4 +37,19 @@
     align-items: center;
     background-color: white;
     height: 20em;
+}
+
+@media screen and (max-width: 1225px) {
+    .navbar-links {
+        gap: .5em;
+    }
+    .navbar-link {
+        font-size: 1.2em;
+        padding: .8em;
+        min-width: 4em;
+    }
+    
+    .navbar-top {
+        height: 15em;
+    }
 }

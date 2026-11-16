@@ -18,7 +18,6 @@ export const PhotoGridItem: React.FC<PhotoGridItemProps> = ({ item, style, callB
             photoGridItemRef.current?.style.setProperty('display', 'none');
         } else {
             photoGridItemRef.current?.style.setProperty('display', 'block');
-            console.log("image loaded");
         }
     }, [isLoading]);
 

@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 export default function Layout() {
 
     return (
-        <main>
+        <main style={{ overflow: "hidden" }}>
             <Navbar />
             <Outlet />
             <Footer />

@@ -28,7 +28,7 @@
 
 .homepage-about__card h2 {
     margin: 0 0 1rem;
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-size: clamp(2rem, 3vw, 3rem);
 }
 
 .homepage-about__card p {

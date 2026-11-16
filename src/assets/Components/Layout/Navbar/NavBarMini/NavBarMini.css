@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0em 1em;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
@@ -21,14 +20,25 @@
 }
 
 .navbar-mini-link a div {
-    color: var(--secondary-blue-dark);
     transition: color .3s ease-in-out;
     font-size: 1.53em;
+    color: var(--primary-blue);
+    text-shadow: 1px 1px var(--primary-purple);
 }
 .navbar-mini-link a div:hover {
-    color: var(--primary-blue);
+    color: var(--secondary-blue-dark);
 }   
 
 .navbar-mini-logo {
     height: 100%;
+}
+
+@media screen and (max-width: 530px) {
+    .navbar-mini-links {
+        gap: 1em;
+        padding-left: .5em;
+    }
+    .navbar-mini-link a div {
+        font-size: 1.3em;
+    }
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { useMediaQuery } from "react-responsive";
 import { NavBarLinks } from "./NavBarLinks";
 import { useInView } from "react-intersection-observer";
 import { NavBarMini } from "./NavBarMini/NavBarMini";
@@ -12,22 +13,24 @@ const Navbar = () => {
         initialInView: true,
     })
 
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
     return (
         <nav ref={ref} className="navbar-container">
-                <div className="navbar-top">
-                    <img className="navbar-logo" src={logo} alt="Tiki Cat Nat Logo" />
-                    <ul className="navbar-links">
-                    {NavBarLinks.map((link) => (
-                        <li className="navbar-link" key={link.href}>
-                            <Link to={link.href}>
-                            <div>{link.label}</div>
-                        </Link>
-                    </li>
+            {!isMobile && (<div className="navbar-top">
+                <img className="navbar-logo" src={logo} alt="Tiki Cat Nat Logo" />
+                <ul className="navbar-links">
+                {NavBarLinks.map((link) => (
+                    <li className="navbar-link" key={link.href}>
+                        <Link to={link.href}>
+                        <div>{link.label}</div>
+                    </Link>
+                </li>
                 ))}
                 </ul>
-            </div>
-            <Socials />
-            <NavBarMini isInView={inView} />
+                <Socials />
+            </div>)}
+            <NavBarMini isInView={isMobile ? false : inView} />
         </nav>
     );
 };
